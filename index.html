@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Date object
+        let currentDate = new Date();
+
+        let day = currentDate.getDate();
+
+        let month = currentDate.getMonth();
+
+        let fullYear = currentDate.getFullYear();
+
+        console.log(`${fullYear}-${month}-${day}`);
+
+
+        // Math object
+        const numbers = [1, 2, 3, 4, 5];
+
+        function squaresSum(num) {
+            let sumOfSquares = 0;
+
+            for (let i = 0; i < num.length; i++) {
+                sumOfSquares += num[i] ** 2;
+            }
+
+            const squareRoot = Math.sqrt(sumOfSquares);
+
+            return squareRoot;
+        }
+
+        const result = squaresSum(numbers);
+
+        console.log(result);
+
+
+    </script>
+
+
+</body>
+
+</html>
